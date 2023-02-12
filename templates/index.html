@@ -1,0 +1,40 @@
+
+
+
+{% block head %}
+
+<title>Discount Calculator</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">Calculator</h1>
+    <div class="form">
+        <form action="/discount" method="POST">
+            <div>
+              <label for="item1">Item1:</label>
+              <input type="text" name= "item1" id="item1">
+            </div>
+            <div>
+              <label for="item2">Item2:</label>
+              <input type="text" name="item2" id="item2">
+            </div>
+            <div>
+              <label for="item3">Item3:</label>
+              <input type="text" name="item3" id="item3">
+            </div>
+            <div>
+              <label for="item4">Item4:</label>
+              <input type="text" name="item4" id="item4">
+            </div>
+            <div>
+              <label for="Item5">Item5:</label>
+              <input type="text" name="item5" id="item5">
+            </div>
+            <input type="submit" value="Calculate">
+          </form>
+          
+    </div>
+</div>
+{% endblock %}
